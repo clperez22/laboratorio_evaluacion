@@ -1,25 +1,36 @@
 .titulo{
-    text-align: center;
+    margin-left: 3rem;
 }
 
 .caja{
-background-color: rgb(189, 189, 189);
-margin-bottom: 2rem;
+    width: 375px;
+    background-color: rgb(189, 189, 189);
+    padding-top: 1rem;
+    margin-bottom: 2rem;
 }
-.profile-picture{
+.circulo{
+    text-align: center;
     width: 10rem;
     height: 10rem;
     background-color: rgb(226, 150, 163);
     border-radius: 5rem;
     margin-left: 6rem;
-    padding-top: -calc();
 }
 .username{
     text-align: center;
-margin-top: 1rem;
-margin-bottom: 2rem;
-font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
 }
-.nombres{
-    margin-left: 5rem;
+.corrreo{
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem;
+}
+.cel{
+    margin-bottom: 0.5rem;
+    margin-left: 1.5rem; 
+}
+.empresa{
+   padding-bottom: 3rem;
+    margin-left: 1.5rem; 
 }

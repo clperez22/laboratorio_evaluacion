@@ -1,57 +1,57 @@
-async function getUsuarios() {
+async function usuariosx() {
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users');
-      const data = await response.json();
-      return data;
+      let ddd = await fetch("https://jsonplaceholder.typicode.com/users");
+      let gato1 = await ddd.json();
+      return gato1;
     } catch (error) {
       console.log('Error:', error);
     }
   }
   
-  function crearComponentes(data) {
-    const container = document.getElementById('container');
+  function hola(gato1) {
+    let hhola = document.getElementById('hhola');
   
-    //  un bucle for para iterar sobre los datos
-    data.forEach(item => {
-      const componente = document.createElement('div');
-      componente.classList.add('caja');
+  
+    gato1.forEach(item => {
+      let gato2 = document.createElement('div');
+      gato2.classList.add('caja');
 
      
   
 
 
-      const profilePicture = document.createElement('div');
-      profilePicture.classList.add('profile-picture');
+      let profilePicture = document.createElement('div');
+      profilePicture.classList.add('circulo');
   
-      const username = document.createElement('div');
+      let username = document.createElement('div');
       username.classList.add('username');
       username.textContent = item.username;
-      
+    
   
-      const nombre = document.createElement('nombres');
-      nombre.textContent = item.name;
-  
-      const email = document.createElement('p');
+      let email = document.createElement('div');
+      email.classList.add('corrreo');
       email.textContent = item.email;
   
-      const telefono = document.createElement('p');
+      let telefono = document.createElement('div');
+      telefono.classList.add('cel');
       telefono.textContent = item.phone;
   
-      const compañia = document.createElement('p');
+      let compañia = document.createElement('div');
+      compañia.classList.add('empresa');
       compañia.textContent = item.company.name;
       
   
-      componente.appendChild(profilePicture);
-      componente.appendChild(username);
-      componente.appendChild(nombre);
-      componente.appendChild(email);
-      componente.appendChild(telefono);
-      componente.appendChild(compañia);
+      gato2.appendChild(profilePicture);
+      gato2.appendChild(username);
+      
+      gato2.appendChild(email);
+      gato2.appendChild(telefono);
+      gato2.appendChild(compañia);
   
-      container.appendChild(componente);
+      hhola.appendChild(gato2);
     });
   }
   
-  getUsuarios()
-    .then(data => crearComponentes(data))
+  usuariosx()
+    .then(gato1=> hola(gato1))
     .catch(error => console.log(error));
