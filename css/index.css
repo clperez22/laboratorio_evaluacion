@@ -1,0 +1,25 @@
+.titulo{
+    text-align: center;
+}
+
+.caja{
+background-color: rgb(189, 189, 189);
+margin-bottom: 2rem;
+}
+.profile-picture{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(226, 150, 163);
+    border-radius: 5rem;
+    margin-left: 6rem;
+    padding-top: -calc();
+}
+.username{
+    text-align: center;
+margin-top: 1rem;
+margin-bottom: 2rem;
+font-size: 2rem;
+}
+.nombres{
+    margin-left: 5rem;
+}
